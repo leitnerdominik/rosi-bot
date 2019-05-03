@@ -1,0 +1,24 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "9.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "discord.js": "^11.3.2",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
