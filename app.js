@@ -1,7 +1,6 @@
 const fs = require('fs');
 
 const Discord = require('discord.js');
-// const { PREFIX, token } = require('./config.json');
 
 const { PREFIX, DISCORD_TOKEN } = process.env;
 

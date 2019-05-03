@@ -1,5 +1,6 @@
-const { prefix } = require('../config.json');
 const { RichEmbed } = require('discord.js');
+
+const { PREFIX } = process.env;
 
 module.exports = {
   name: 'help',
@@ -19,11 +20,11 @@ module.exports = {
         .setTitle('Befehle')
         .setDescription(
           `Hier eine Liste aller Befehle:\n
-          Sende \`${prefix}help [command name]\` um genauere Info's zu erhalten.`,
+          Sende \`${PREFIX}help [command name]\` um genauere Info's zu erhalten.`,
         )
         .addBlankField();
       commands.forEach(command => {
-        helpEmbed.addField(`${prefix}${command.name}`, command.description);
+        helpEmbed.addField(`${PREFIX}${command.name}`, command.description);
       });
       // data.push('Hier ist eine Liste aller Befehle:');
       // data.push(
