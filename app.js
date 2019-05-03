@@ -34,7 +34,6 @@ client.on('message', message => {
   const args = message.content.slice(PREFIX.length).split(/ +/);
   const commandName = args.shift().toLowerCase();
   const { channel } = message;
-  console.log(message.author.lastMessage.member.roles);
 
   // if(!client.commands.has(commandName)) return;
 

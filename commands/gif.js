@@ -15,7 +15,6 @@ const gif = {
         .get(requestURL)
         .then(response => {
           const gifurl = response.data.data[0].images.fixed_width.url;
-          // console.log(gifurl);
           message.channel.send({ file: gifurl });
         })
         .catch(error => console.error(error));
